@@ -9,11 +9,11 @@ To setup this project follow the instructions given here: https://github.com/uda
 
 This project contains three main files: 
 
-- `agent.py` which defines the DQN-agent interacting with the environment.
+- `agent.py` which defines the DQN-agent interacting with the environment
 - `model.py` that contains the definition of the underlying neural network of the agent
 - `replay_buffer.py` that contains the class for the replay buffer (which is also part of the agent)
 
-Moreover, to train the model simply exeute the cells in `train.ipynb`. This will train a new agent and saves the model along with a plot of the training history in the folder called model. To test your trained agent run the cells in `test.ipynb`.
+To train the model simply exeute the cells in `train.ipynb`. This will train a new agent and save the model along with a plot of the training history in the folder called `model`. To test the trained agent run the cells in `test.ipynb`.
 
 
 ### Training Scheme
