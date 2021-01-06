@@ -95,3 +95,14 @@ class Agent:
         # update weights
         for target_param, local_param in zip(self.q_network_target.parameters(), self.q_network.parameters()):
             target_param.data.copy_(self.tau*local_param.data + (1.0-self.tau)*target_param.data)
+            
+            
+    def save_q_network(self, path):
+        torch.save(self.q_network.state_dict(), path)
+        
+        
+    def load_q_network(self, path):
+        state_dict = torch.load(path)
+        self.q_network.load_state_dict(state_dict)
+        self.q_network_target.load_state_dict(state_dict)
+        
