@@ -16,11 +16,10 @@ This project contains three main files:
 Moreover, to train the model simply exeute the cells in `train.ipynb`. This will train a new agent and saves the model along with a plot of the training history in the folder called model. To test your trained agent run the cells in `test.ipynb`.
 
 
-### Training Schem)
+### Training Scheme
 
-The current model was trained with default parameters of the the agent (see `agent.py` for details). Moreover we used 
+Training the agent (initilaized with its default parameters defined in `agent.py`) for 2000 episodes yields the following training history:
 
-n_episodes = 2000
-n_rolling_average = 100
-update_every = 4
-epsilon = 0.01
+![Training History](model/training_history.png)
+
+After 750 episodes the rolling average score over 100 episodes is clearly above the critical value of 13. During training the agent's Q-network was retrained every 4 timesteps. A epsilon-greedy policy was used with a constant epsilon of 0.01. See `train.ipynb` for more details.
