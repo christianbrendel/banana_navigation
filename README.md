@@ -4,7 +4,7 @@
 
 This repository shows how a deep neural network can be trained to control an agent in some environment. In this case the environment is quadratic world full of yellow and blue bananas. See the image below:
 
-![Banana World](banana_world.png)
+<img src="banana_world.png" alt="Banana World" width="400"/>
 
 The task is to control the agent and pick up as many yellow bananas as possible within a certain timeframe (the task is episodic). This behavior can be enforced by the reward fed back by the environment. In particular picking up a blue bananda yields -1 while picking up a yellow one yields +1. Moreover, the agent can be controlled by the four basic actions 'move forward', 'move backward', 'turn left' and 'turn right'.
 
@@ -34,6 +34,6 @@ Training the agent (initilaized with its default parameters defined in `agent.py
 After 750 episodes the rolling average score over 100 episodes is clearly above the critical value of 13. During training the agent's Q-network was retrained every 4 timesteps. A epsilon-greedy policy was used with a constant epsilon of 0.01. See `train.ipynb` for more details.
 
 
-### Further Details
+### Further Details (Report)
 
-For further details about the used algorithm itself please take a look at the report.
+For further details about the used algorithm itself please take a look at this report: https://www.notion.so/Report-Project-1-41e6027a45bc487db06fcfb3603b8a3c
