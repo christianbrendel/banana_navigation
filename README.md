@@ -1,11 +1,20 @@
 # banana_navigation
 
+### Description
+
+This repository shows how a deep neural network can be trained to control an agent in some environment. In this case the environment is quadratic world full of yellow and blue bananas. See the image below:
+
+![Training History](model/banana world.png)
+
+The task is to control the agent and pick up as many yellow bananas as possible within a certain timeframe (the task is episodic). This behavior can be enforced by the reward fed back by the environment. In particular picking up a blue bananda yields -1 while picking up a yellow one yields +1.
+
+
 ### Setup 
 
-To setup this project follow the instructions given here: https://github.com/udacity/deep-reinforcement-learning
+The environment is provided by Unity. To setup this project follow the instructions given here: https://github.com/udacity/deep-reinforcement-learning
 
 
-### Sturcture 
+### Structure 
 
 This project contains three main files: 
 
@@ -23,3 +32,8 @@ Training the agent (initilaized with its default parameters defined in `agent.py
 ![Training History](model/training_history.png)
 
 After 750 episodes the rolling average score over 100 episodes is clearly above the critical value of 13. During training the agent's Q-network was retrained every 4 timesteps. A epsilon-greedy policy was used with a constant epsilon of 0.01. See `train.ipynb` for more details.
+
+
+### Further Details
+
+For further details about the used algorithm itself please take a look at the report.
