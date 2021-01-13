@@ -4,9 +4,9 @@
 
 This repository shows how a deep neural network can be trained to control an agent in some environment. In this case the environment is quadratic world full of yellow and blue bananas. See the image below:
 
-![Training History](model/banana world.png)
+![Banana World](banana_world.png)
 
-The task is to control the agent and pick up as many yellow bananas as possible within a certain timeframe (the task is episodic). This behavior can be enforced by the reward fed back by the environment. In particular picking up a blue bananda yields -1 while picking up a yellow one yields +1.
+The task is to control the agent and pick up as many yellow bananas as possible within a certain timeframe (the task is episodic). This behavior can be enforced by the reward fed back by the environment. In particular picking up a blue bananda yields -1 while picking up a yellow one yields +1. Moreover, the agent can be controlled by the four basic actions 'move forward', 'move backward', 'turn left' and 'turn right'.
 
 
 ### Setup 
